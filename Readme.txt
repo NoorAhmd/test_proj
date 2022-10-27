@@ -32,7 +32,7 @@ Schema
 Coding Principles
 
 1. All inputs must be sanitized against XSS and SQL injection
-2. Endpoints must return 500 Error
+2. Endpoints must return 500 Error with a proper error text on error cases {"response":"error","reason":errorReason}. Success cases must return {"response":"success","data":returnObject}
 3. Using Async/Await is must.
 4. Don't forget to catch the execution errors.
 5. Database credentials must be passed to logic via shell variables.
@@ -42,4 +42,3 @@ When you finish
 
 1. Check your code well.
 2. Commit and push your branch
-
