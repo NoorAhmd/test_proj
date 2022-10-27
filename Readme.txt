@@ -37,3 +37,9 @@ Coding Principles
 4. Don't forget to catch the execution errors.
 5. Database credentials must be passed to logic via shell variables.
 6. Use camelCase on variables.
+
+When you finish
+
+1. Check your code well.
+2. Commit and push your branch
+
