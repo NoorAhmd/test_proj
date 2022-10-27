@@ -42,4 +42,3 @@ When you finish
 
 1. Check your code well.
 2. Commit and push your branch
-
