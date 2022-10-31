@@ -37,6 +37,7 @@ Coding Principles
 4. Don't forget to catch the execution errors.
 5. Database credentials must be passed to logic via shell variables.
 6. Use camelCase on variables.
+7. Plus. Create a Dockerfile to run your solution as a microservice. 
 
 When you finish
 
