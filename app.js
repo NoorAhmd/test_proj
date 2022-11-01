@@ -1,15 +1,17 @@
-const express = require('express');
-const path = require('path');
+const express = require('express')
+const {connect} = require('mongoose')
+const path = require('path')
 
-const indexRouter = require('./routes/index');
+connect().then(() => console.log('DB is running!'))
 
+const indexRouter = require('./routes/index')
 
-let app = express();
+let app = express()
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.json())
+app.use(express.urlencoded({extended: false}))
+app.use(express.static(path.join(__dirname, 'public')))
 
-app.use('/', indexRouter);
+app.use('/', indexRouter)
 
-module.exports = app;
+module.exports = app
